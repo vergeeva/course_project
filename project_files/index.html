@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="fonts/ubuntu/ubuntu_stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body class="body-container">
+<main class="main-container">
+    <section class="about-me-section">
+        <div class="about-me-title">Вергеева Анастасия, 22 года</div>
+        <div class="about-me-caption">
+            <h3>Факты обо мне:</h3>
+                На данный момент работаю веб-разработчиком. <br>
+                <button class="button-show-more">Немного больше информации</button>
+            <div class="hidden-info">
+                Всеми силами надеюсь, что дизайн вместо меня всегда будет делать дизайнер. <br>
+                Интроверт, заточенный в теле экстраверта. <br>
+                Закончила университет на пятерки, чтобы везде об этом писать. <br>
+                Фотографий, конечно, у меня маловато. <br>
+            </div>
+        </div>
+        <div class="carousel-personal-photos">
+            <div class="carousel-personal-wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                    <li class="card">
+                        <div class="card-img"><img class="img-item" src="images/personal/photo1.jpg" alt="Весьма серьезное селфи" draggable="false"></div>
+                    </li>
+                    <li class="card">
+                        <div class="card-img"><img class="img-item" src="images/personal/photo2.jpg" alt="Фото с чужой собакой" draggable="false"></div>
+
+                    </li>
+                    <li class="card">
+                        <div class="card-img"><img class="img-item" src="images/personal/photo3.jpg" alt="Фото в розовых очках" draggable="false"></div>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+    </section>
+    <section class="my-projects-section">
+        <div class="my-projects-title">Мои проекты</div>
+        <div class="project-item-wrapper">
+            <ul class="projects-list">
+                <li class="project-item">
+                    <img class="project-item-picture" src="images/projects/photo_3_2023-09-17_22-31-18.jpg" alt="Дипломный проект">
+                    <span class="project-item-caption">
+                        Дипломный проект представляет собой сайт для управления временем. Интерфейсная часть реализована на фреймворке JavaScript - React,
+                        серверная часть на фреймворке для Python - FastAPI.
+                    </span>
+                    <a class="project-item-link" href="https://github.com/vergeeva/react_management">Интерфейсная - гитхаб</a>
+                    <a class="project-item-link" href="https://github.com/vergeeva/backendManagement">Серверная часть - гитхаб</a>
+                </li>
+                <li class="project-item">
+                    <img class="project-item-picture" src="images/projects/photo_1_2023-09-17_22-31-18.jpg" alt="Встань на путь здоровья">
+                    <span class="project-item-caption">
+                       Приняла участие в реализации простой логики и мелкой анимации в проекте для одностраничного сайта.
+                    </span>
+                    <a class="project-item-link" href="https://калькулятор-здоровья.рф/">Ссылка на сайт</a>
+                </li>
+                <li class="project-item">
+                    <img class="project-item-picture" src="images/projects/photo_2_2023-09-17_22-31-18.jpg" alt="Отчет по лидам">
+                    <span class="project-item-caption">
+                       Сейчас разрабатываю отчет по ЛИДам для клиента в Битрикс24 на корпоративном портале.
+                       Все, что могу прикрепить - скриншот. Ссылочки не будет, отмечаю как факт.
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="hobbies-section">
+        <div class="hobbies-caption">
+            <h3>Нечто помимо рабочих вопросов:</h3>
+            <ul class="hobbies-list">
+                <li class="hobbies-item">Фавориты в музыке - The Prodigy, Би-2 и Florence and the Machine. (В тайне еще Анна Асти, конечно же)</li>
+                <li class="hobbies-item">Есть цель научиться играть на укулеле, чтобы покорить подземку на кировке</li>
+                <li class="hobbies-item">Умею писать неплохие стихи о том, о сём</li>
+                <li class="hobbies-item">Плохо делаю дизайны...</li>
+            </ul>
+        </div>
+    </section>
+</main>
+<script src="script/main.js"></script>
+</body>
+</html>
+
+<!--Страница должна содержать ваше имя, краткую информацию о вас и несколько фотографий. -->
+<!--Добавьте на страницу кнопку "Показать больше информации". -->
+<!--При нажатии на эту кнопку, должен выводиться дополнительный текст с более подробной информацией о вас.-->
+<!--Реализуйте этот функционал с использованием JavaScript. -->
+<!--Текст должен появляться и исчезать при нажатии на кнопку.-->
+
+<!--Требования:-->
+<!--Используйте HTML для разметки страницы, CSS для стилизации и JavaScript для добавления интерактивности. -->
+<!--Соблюдайте чистоту и аккуратность кода. Прокомментируйте сложные места в коде. -->
+<!--Уделите внимание дизайну страницы. Соблюдайте гармоничное сочетание цветов и шрифтов.-->
+
+<!--*Если вы сможете реализовать на странице интересную анимацию или переходы, -->
+<!--то это определенно принесет вам дополнительный плюсик в карму-->
