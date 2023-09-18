@@ -83,7 +83,7 @@ carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
-
+// for hide or show text
 document.querySelector(".button-show-more").addEventListener("click", (e) => {
     let hiddenText = document.querySelector(".hidden-info");
     console.log(hiddenText);
@@ -99,3 +99,17 @@ document.querySelector(".button-show-more").addEventListener("click", (e) => {
         e.target.textContent = "Немного больше информации";
     }
 })
+
+function onEntry(entry) {
+    entry.forEach(change => {
+        if (change.isIntersecting) {
+            change.target.classList.add('element-show');
+        }
+    });
+}
+let options = { threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.project-item');
+for (let elm of elements) {
+    observer.observe(elm);
+}
